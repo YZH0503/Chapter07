@@ -1,0 +1,39 @@
+/*
+Filename:T7_27.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 20th, 2022
+College: School of Computer Science and InformationEngineering
+Function:°®À­ÍÐÑ·Ë¹É¸·¨
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[1000]={1};
+    int j=0;
+    cout<<"2 3 5 7 ";
+    for(int i=0;i<1000;i++)
+    {
+
+        while(i>=2)
+        {
+            if(i%2==0||i%3==0||i%5==0||i%7==0)
+            {
+                a[i]=0;
+                break;
+            }
+            else
+            {
+                a[i]=1;
+                j=i;
+
+                cout<<j<<" ";
+                break;
+            }
+        }
+    }
+    return 0;
+}
