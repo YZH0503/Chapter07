@@ -1,0 +1,27 @@
+/*
+Filename:T7_13.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 20th, 2022
+College: School of Computer Science and InformationEngineering
+Function:利用array对象去重
+*/
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+	int a[20];
+	for(int i=0;i<20;i++)
+    {
+        cin>>a[i];
+    }
+	sort(a, a + 20);
+	cout << a[0];
+	for (int i = 1; i<20; i++)
+	{
+		if (a[i] != a[i - 1])
+			cout << " " << a[i];
+	}
+	cout << endl;
+}
