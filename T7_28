@@ -1,0 +1,32 @@
+/*
+Filename:T7_28.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 20th, 2022
+College: School of Computer Science and InformationEngineering
+Function:回文字符串的判断
+*/
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    string a, b;
+    cin >> a;
+    b = a;
+    reverse( a.begin() , a.end() );
+    if(a==b)
+    {
+        cout << "是回文数" <<endl;
+    }
+    else
+    {
+        cout << "不是回文数" <<endl;
+    }
+
+
+    return 0;
+}
